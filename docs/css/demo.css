@@ -1,0 +1,43 @@
+body {
+  background-color: #000;
+  font-family: 'Noto Sans HK', sans-serif;
+  padding: 40px;
+  margin: 0;
+  font-weight: 200;
+  min-height: 100vh; }
+
+.wrapper {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+h4 {
+  font-size: 1.6em; }
+
+.text {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px; }
+  .text h2 {
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: capitalize; }
+  .text strong {
+    font-weight: 700;
+    color: #059BC6; }
+
+.examples {
+  display: flex; }
+  .examples > a {
+    margin: auto;
+    box-shadow: 0 0 30px black; }
+  .examples .owl-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+/*# sourceMappingURL=demo.css.map */

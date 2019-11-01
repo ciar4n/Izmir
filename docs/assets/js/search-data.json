@@ -1,0 +1,73 @@
+{
+  "0": {
+    "id": "0",
+    "title": "Getting Started",
+    "content": "Introduction Izmir is a mini CSS library allowing you to quickly create beautiful image hover elements. Packed with a host of styling classes and custom properties, Izmir allows you total control and almost limitless possibilites. Simply load the CSS library in to your project, add the element markup combined with the style classes of your choice to custom build your perfect image hover effect. Features 1000’s of possible style combinations 20 animated border effects 9 animated image effect 12 animated text effects Overlay style classes Animation delay classes Text layout classes Collection of custom properties to further custom style your element Border width Border margin Border color Primary color Secondary color Text color Image hover opacity Image hover color Image hover gradient Accesible (hover triggered on focus) Ultra small file size (2KB GZipped) Complete documentation Installation Extract and copy the CSS files in the root of your download folder to your projects CSS folder. Include a link to the CSS your document’s &lt;head&gt; tags &lt;link rel=&quot;stylesheet&quot; href=&quot;css/izmir.min.css&quot;&gt; Use the following markup to create the most basic instance of an image hover element.. &lt;figure class=&quot;c4-izmir&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/FaPxZ88yZrw/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption&gt; &lt;h3&gt; Some sample text &lt;/h3&gt; &lt;/div&gt; &lt;/figure&gt; Some sample text",
+    "url": "http://localhost:4000/1A-getting-started.html",
+    "relUrl": "/1A-getting-started.html"
+  },
+  "1": {
+    "id": "1",
+    "title": "Customisation",
+    "content": "How to Customise Image hover elements can be customised by applying a collection of classes within the elements markup. One class can be applied from each of the following categories allowing endless possibilties to customise your Image Hover element to your own taste. Hover Border Animation Hover Image Animation Hover Text Animation Text Animation Delay Hover Overlay Style Caption Layout Elements can be customised further by defining custom properties either globally or inline within a single or selected number of elements. –text-color –primary-color –secondary-color –padding –border-radius –transition-duration –border-margin –border-width –border-color –image-opacity Example &lt;figure class=&quot;c4-izmir c4-border-bottom-left c4-image-rotate-right c4-gradient-bottom-right&quot; tabindex=&quot;0&quot; style=&quot;--primary-color: #f12711; --secondary-color: #f5af19; --image-opacity: .1;&quot;&gt; &lt;img src=&quot;assets/images/image05.jpg&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption class=&quot;c4-layout-bottom-left&quot;&gt; &lt;div class=&quot;c4-reveal-right c4-delay-100&quot;&gt; &lt;h3&gt; Creative Control &lt;/h3&gt; &lt;/div&gt; &lt;/figcaption&gt; &lt;/figure&gt; Creative Control",
+    "url": "http://localhost:4000/2A-customisation.html",
+    "relUrl": "/2A-customisation.html"
+  },
+  "2": {
+    "id": "2",
+    "title": "Border Animation",
+    "content": "Hover Border Animation This CSS library includes selection of animated border styles to choose from. These are applied by adding a border style class to the &lt;figure&gt; tag of your image hover element. In the following example we are applying the c4-border-vert border hover effect. &lt;figure class=&quot;c4-izmir c4-border-vert&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/WLUHO9A_xik/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption&gt; // Caption text &lt;/figcaption&gt; &lt;/figure&gt; Border Classes c4-border-center c4-border-vert c4-border-horiz c4-border-top c4-border-bottom c4-border-left c4-border-right c4-border-top-left c4-border-top-right c4-border-bottom-left c4-border-bottom-right c4-border-corners-1 c4-border-corners-2 c4-border-cc-1 c4-border-ccc-1 c4-border-cc-2 c4-border-ccc-2 c4-border-cc-3 c4-border-ccc-3 c4-border-fade",
+    "url": "http://localhost:4000/2B-border-animation.html",
+    "relUrl": "/2B-border-animation.html"
+  },
+  "3": {
+    "id": "3",
+    "title": "Image Animation",
+    "content": "Hover Image Animation Also included is a selection of animated image effects to choose. These are applied by adding a image style class to the &lt;figure&gt; tag of your image hover element. In the following example we are applying the c4-image-zoom-in image hover effect. &lt;figure class=&quot;c4-izmir c4-image-zoom-in&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/WLUHO9A_xik/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption&gt; // Caption text &lt;/figcaption&gt; &lt;/figure&gt; Image Classes c4-image-zoom-in c4-image-zoom-out c4-image-pan-up c4-image-pan-down c4-image-pan-left c4-image-pan-right c4-image-rotate-left c4-image-rotate-right c4-image-blur",
+    "url": "http://localhost:4000/2C-image-animation.html",
+    "relUrl": "/2C-image-animation.html"
+  },
+  "4": {
+    "id": "4",
+    "title": "Text Animation",
+    "content": "Hover Text Animation With each image you can add content between the figcaption tags which will be displayed on hover of the image. Animations can be applied to this content by wrapping in a div with a text animation class applied. Multiple divs can included to apply different animations to content. In the following markup we are applying the c4-reveal-up hover effect is been applied to the h3 tag and c4-reveal-down is been applied to the &lt;p&gt; tag. &lt;figure class=&quot;c4-izmir&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/WLUHO9A_xik/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption&gt; &lt;div class=&quot;c4-reveal-up&quot;&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/div&gt; &lt;div class=&quot;c4-reveal-up&quot;&gt; &lt;p&gt; Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. &lt;/p&gt; &lt;/div&gt; &lt;/figcaption&gt; &lt;/figure&gt; Text Animation Classes Sample Text c4-reveal-up Sample Text c4-reveal-down Sample Text c4-reveal-left Sample Text c4-reveal-right Sample Text c4-fade-up Sample Text c4-fade-down Sample Text c4-fade-left Sample Text c4-fade-right Sample Text c4-rotate-up-right Sample Text c4-rotate-up-left Sample Text c4-rotate-down-right Sample Text c4-rotate-down-left",
+    "url": "http://localhost:4000/2D-text-animation.html",
+    "relUrl": "/2D-text-animation.html"
+  },
+  "5": {
+    "id": "5",
+    "title": "Overlay Style",
+    "content": "Hover Overlay Style When hovering an element an overlay is animated over the image to add styling and allow contrast for more readable text. Included is a number of classes to apply a gradient to this overlay. These gradient classes are applied to the figure tag of your element. In the following example we are applying the c4-image-zoom-in overlay style. &lt;figure class=&quot;c4-izmir c4-gradient-top-left&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/WLUHO9A_xik/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption&gt; // Caption text &lt;/figcaption&gt; &lt;/figure&gt; The gradient colors are taken from the primary-color and secondary-color custom properties. For details on changing these values either globally or locally within a single element, checkout the Custom Properties section. Available Classes c4-gradient-top c4-gradient-left c4-gradient-right c4-gradient-bottom c4-gradient-top-left c4-gradient-top-right c4-gradient-bottom-left c4-gradient-bottom-right",
+    "url": "http://localhost:4000/2E-overlay-style.html",
+    "relUrl": "/2E-overlay-style.html"
+  },
+  "6": {
+    "id": "6",
+    "title": "Animation Delay",
+    "content": "Text Animation Delay Text animation effect can be delayed with the addition of a delay-xxx class applied to the wrapper. This can be helpful if you wish blocks of content to be displayed in a staggered manner on hover/focus. Delay classes are available in steps of 100ms from 100ms to 1000ms (delay-100, delay-200, delay-300 …. delay-1000). &lt;figure class=&quot;c4-izmir&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/WLUHO9A_xik/400x300&quot; alt=&quot;Sample Image&quot; /&gt; &lt;figcaption&gt; &lt;div class=&quot;c4-reveal-down&quot;&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/div&gt; &lt;div class=&quot;c4-reveal-left c4-delay-200&quot;&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/div&gt; &lt;div class=&quot;c4-reveal-right c4-delay-400&quot;&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/div&gt; &lt;div class=&quot;c4-reveal-up c4-delay-600&quot;&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/div&gt; &lt;/figcaption&gt; &lt;/figure&gt; Sample Text Sample Text Sample Text Sample Text",
+    "url": "http://localhost:4000/2F-animation-delay.html",
+    "relUrl": "/2F-animation-delay.html"
+  },
+  "7": {
+    "id": "7",
+    "title": "Caption Layout",
+    "content": "Caption Layout The placement of content of the caption area can be edited with a collection of c4-layout-* classes. These c4-layout-* classes are applied to the &lt;figcaption&gt; tab. The default location for content is centered both vertically and horizontally. In the following example we are applying the c4-layout-bottom-left to the figcaption area, moving the caption content to the bottom left.. &lt;figure class=&quot;c4-izmir&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/WLUHO9A_xik/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption class=&quot;c4-layout-bottom-left&quot;&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/figcaption&gt; &lt;/figure&gt; Layout Classes Sample Text c4-layout-top-left Sample Text c4-layout-top-center Sample Text c4-layout-top-right Sample Text c4-layout-center-left Sample Text c4-layout-center-right Sample Text c4-layout-bottom-left Sample Text c4-layout-bottom-center Sample Text c4-layout-bottom-right",
+    "url": "http://localhost:4000/2G-caption-layout.html",
+    "relUrl": "/2G-caption-layout.html"
+  },
+  "8": {
+    "id": "8",
+    "title": "Custom Properties",
+    "content": "Defining Custom Properties Key variables of the CSS library can be set using Custom Properties either globally or inline within a single or selected number of elements. Defining custom properties globally The following example shows how custom properties can be defined globally across your project. Ensure that such CSS is loaded after the library CSS. .c4-izmir { --primary-color: #F6CD14; --secondary-color: #D0206E; --transition-duration: 500ms; --border-width: 6px; --overlay-opacity: .5; } Defining custom properties inline This example shows how custom properties can be defined inline within a single element. These can be defined inline within the &lt;figure or to a containing div if you wish to define properties to a group elements. &lt;figure class=&quot;c4-izmir c4-border-center c4-gradient-top-left&quot; style=&quot;--primary-color: #000046; --secondary-color: #1CB5E0; --border-width: 10px;&quot;&gt; &lt;img src=&quot;https://source.unsplash.com/1t8go-nyVyE/400x300&quot; alt=&quot;Sample Image&quot;&gt; &lt;figcaption&gt; &lt;h3&gt; Sample Text &lt;/h3&gt; &lt;/figcaption&gt; &lt;/figure&gt; Sample Text –text-color Type: Color Default: #ffffff Defines the text color within the figcaption area. –primary-color Type: Color Default: #00B4DB Defines the primary color as used on the hover image overlay. –secondary-color Type: Color Default: #0083B0 Defines the secondary color as used as the to value on overlay gradients. –padding Type: Length Default: 1em Defines the padding of the figcaption area. –border-radius Type: Length Default: 3px Defines the outside border radius of the image. –transition-duration Type: Time Default: 600ms Defines the duration of the animation on hover. –border-margin Type: Length Default: 15px Defines the distance between the animated border on hover and the outside edge of the element. –border-width Type: Length Default: 3px Defines the width (thickness) of the animated border on hover. –border-color Type: Color Default: #ffffff Defines the color of the animated border on hover. –image-opacity Type: Number Default: .25 Defines the opacity of the image on hover.",
+    "url": "http://localhost:4000/3A-custom-properties.html",
+    "relUrl": "/3A-custom-properties.html"
+  },
+  "9": {
+    "id": "9",
+    "title": "Demo",
+    "content": "Creative Control Endless Possibilities Compose Design Style Build Your Own Responsive Creative Control Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Lorem ipsum dolor Donec nec justo eget felis facilisis fermentum. Lorem ipsum Donec nec justo",
+    "url": "http://localhost:4000/demo.html",
+    "relUrl": "/demo.html"
+  }
+  
+}
