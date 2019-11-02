@@ -47,3 +47,7 @@ Izmir is a mini CSS library allowing you to quickly create beautiful image hover
     </div>
 </figure>
 ```
+
+## License
+
+Izmir CSS Library is licensed under the MIT license. (http://opensource.org/licenses/MIT)
