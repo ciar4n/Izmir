@@ -1,0 +1,138 @@
+/* #{$prefix}-image-*
+   ----------------------------- */
+
+.#{$prefix}-image {
+
+    &-zoom-in {
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.25);
+            }
+        }
+    }
+
+    &-zoom-out {
+        img {
+            transform: scale(1.25);
+        }
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &-pan-up {
+        img {
+            transform-origin: top;
+            transform: scale(1.2) translate(0, 0);
+        }
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.2) translate(0, -15%);
+            }
+        }
+    }
+
+    &-pan-down {
+        img {
+            transform-origin: bottom;
+            transform: scale(1.2) translate(0, 0);
+        }
+
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.2) translate(0, 15%);
+            }
+        }
+    }
+
+    &-pan-left {
+        img {
+            transform-origin: left;
+            transform: scale(1.2) translate(0, 0);
+        }
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.2) translate(-15%, 0);
+            }
+        }
+    }
+
+    &-pan-right {
+        img {
+            transform-origin: right;
+            transform: scale(1.2) translate(0, 0);
+        }
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.2) translate(15%, 0);
+            }
+        }
+    }
+
+    &-blur {
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                filter: blur(4px);
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &-rotate-left {
+        img {
+            transform: scale(1.1) translate(0, 0);
+        }
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.3) rotate(-15deg);
+            }
+        }
+    }
+
+    &-rotate-right {
+        img {
+            transform: scale(1.1) translate(0, 0);
+        }
+
+        &.hover,
+        &:hover,
+        &:focus,
+        :focus > & {
+            img {
+                transform: scale(1.3) rotate(15deg);
+            }
+        }
+    }
+}

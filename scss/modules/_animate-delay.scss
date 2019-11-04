@@ -1,0 +1,9 @@
+/* #{$prefix}-delay-*
+   ----------------------------- */
+@for $i from 1 through 10 {
+
+    .#{$prefix}-delay-#{$i}00,
+    .#{$prefix}-delay-#{$i}00 > * {
+        transition-delay: ($i * 100ms);
+    }
+}

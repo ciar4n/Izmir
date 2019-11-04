@@ -1,0 +1,135 @@
+/* #{$prefix}-fade-*
+/* #{$prefix}-reveal-*
+/* #{$prefix}-rotate-*
+   ----------------------------- */
+[class^='#{$prefix}-fade'],
+[class*=' #{$prefix}-fade'],
+[class^='#{$prefix}-reveal'],
+[class*=' #{$prefix}-reveal'],
+[class^='#{$prefix}-rotate'],
+[class*=' #{$prefix}-rotate'] {
+    display: inline-block;
+
+    > * {
+        display: inline-block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+[class^='#{$prefix}-reveal'],
+[class*=' #{$prefix}-reveal'],
+[class^='#{$prefix}-rotate'],
+[class*=' #{$prefix}-rotate'] {
+    overflow: hidden;
+    opacity: 1;
+}
+
+[class^='#{$prefix}-fade'],
+[class*=' #{$prefix}-fade'] {
+    opacity: 0;
+}
+
+.#{$prefix}-#{$name} {
+
+    &.hover,
+    &:hover,
+    &:focus,
+    :focus > & {
+
+        [class^='#{$prefix}-fade'],
+        [class*=' #{$prefix}-fade'] {
+            opacity: 1;
+            transform: translate(0);
+        }
+
+        [class^='#{$prefix}-reveal'],
+        [class*=' #{$prefix}-reveal'],
+        [class^='#{$prefix}-rotate'],
+        [class*=' #{$prefix}-rotate'] {
+            opacity: 1;
+
+            > * {
+                transform: translate(0) rotate(0deg);
+            }
+        }
+    }
+}
+
+.#{$prefix} {
+    &-fade {
+        &-up {
+            transform: translateY(1.5rem);
+        }
+
+        &-down {
+            transform: translateY(-1.5rem);
+        }
+
+        &-left {
+            transform: translateX(1.5rem);
+        }
+
+        &-right {
+            transform: translateX(-1.5rem);
+        }
+    }
+
+    &-reveal {
+        &-up {
+            > * {
+                transform: translateY(100%);
+            }
+        }
+
+        &-down {
+            > * {
+                transform: translateY(-100%);
+            }
+        }
+
+        &-left {
+            > * {
+                transform: translateX(100%);
+            }
+        }
+
+        &-right {
+            > * {
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    &-rotate {
+        &-up-right {
+            > * {
+                transform-origin: bottom left;
+                transform: rotate(90deg);
+            }
+        }
+
+        &-up-left {
+            > * {
+                transform-origin: bottom right;
+                transform: rotate(-90deg);
+            }
+        }
+
+        &-down-right {
+            > * {
+                transform-origin: top left;
+                transform: rotate(-90deg);
+            }
+        }
+
+        &-down-left {
+            > * {
+                transform-origin: top right;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
