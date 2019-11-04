@@ -1,0 +1,685 @@
+/* #{$prefix}-border-*
+   ----------------------------- */
+[class^='#{$prefix}-border'],
+[class*=' #{$prefix}-border'] {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {
+		background-color: $border-color;
+		background-color: var(--border-color);
+		position: absolute;
+		content: '';
+	}
+	&:before, 
+	&:after {
+		z-index: 1;
+		height: $border-width;
+		height: var(--border-width);
+		left: $border-margin;
+		left: var(--border-margin);
+		right: $border-margin;
+		right: var(--border-margin);
+		transform: scaleX(0);
+	}
+	&:before {
+		top: $border-margin;
+		top: var(--border-margin);
+	}
+	&:after {
+		bottom: $border-margin;
+		bottom: var(--border-margin);
+	}
+	figcaption {
+		z-index: 3;
+		&:before, &:after {
+			z-index: -1;
+			width: $border-width;
+			width: var(--border-width);
+			top: $border-margin;
+			top: var(--border-margin);
+			bottom: $border-margin;
+			bottom: var(--border-margin);
+			transform: scaleY(0);
+		}
+		&:before {
+			left: $border-margin;
+			left: var(--border-margin);
+		}
+		&:after {
+			right: $border-margin;
+			right: var(--border-margin);
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before,
+		&:after,
+		figcaption:before,
+		figcaption:after {
+			transform: scale(1);
+		}
+	}
+}
+ /* #{$prefix}-border-center
+   ----------------------------- */
+.#{$prefix}-border-center {
+
+}
+ /* #{$prefix}-border-vert
+   ----------------------------- */
+.#{$prefix}-border-vert {
+	&:before,
+	&:after {
+		transition-duration: 0s;
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before,
+		&:after {
+			transition-delay: ($transition-duration / 1.25);
+		}
+	}
+}
+ /* #{$prefix}-border-horiz
+   ----------------------------- */
+.#{$prefix}-border-horiz {
+	figcaption {
+		&:before,
+		&:after {
+			transition-duration: 0s;
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		figcaption {
+			&:before, 
+			&:after {
+				transition-delay: ($transition-duration / 1.25);
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-bottom
+   ----------------------------- */
+.#{$prefix}-border-bottom {
+	&:after {
+		transition-delay: ($transition-duration / 1.25);
+	}
+	&:before,
+	&:after {
+		transition-duration: 0s;
+	}
+	figcaption {
+		&:before,
+		&:after {
+			transform-origin: 100% 100%;
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: ($transition-duration / 1.25);
+		}
+		&:after {
+			transition-delay: 0s;
+		}
+	}
+}
+ /* #{$prefix}-border-top
+   ----------------------------- */
+.#{$prefix}-border-top {
+	&:before {
+		transition-delay: ($transition-duration / 1.25);
+	}
+	&:before,
+	&:after {
+		transition-duration: 0s;
+	}
+	figcaption {
+		&:before,
+		&:after {
+			transform-origin: 0 0;
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:after {
+			transition-delay: ($transition-duration / 1.25);
+		}
+		&:before {
+			transition-delay: 0s;
+		}
+	}
+}
+ /* #{$prefix}-border-right
+   ----------------------------- */
+.#{$prefix}-border-right {
+	&:before,
+	&:after {
+		transform-origin: 100% 100%;
+	}
+	figcaption {
+		&:after {
+		transition-delay: ($transition-duration / 1.25);
+		}
+		&:before,
+		&:after {
+			transition-duration: 0s;
+		}
+	}
+
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		figcaption {
+			&:before {
+				transition-delay: ($transition-duration / 1.25);
+			}
+			&:after {
+				transition-delay: 0s;
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-left
+   ----------------------------- */
+.#{$prefix}-border-left {
+	&:before,
+	&:after {
+		transform-origin: 0 0;
+	}
+	figcaption {
+		&:before {
+		transition-delay: ($transition-duration / 1.25);
+		}
+		&:before,
+		&:after {
+			transition-duration: 0s;
+		}
+	}
+
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		figcaption {
+			&:after {
+				transition-delay: ($transition-duration / 1.25);
+			}
+			&:before {
+				transition-delay: 0s;
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-corners-1
+   ----------------------------- */
+.#{$prefix}-border-corners-1 {
+	&:before,
+	figcaption:before {	
+		transform-origin: 0 0;
+	}
+	&:after,
+	figcaption:after{
+		transform-origin: 100% 100%;
+	}
+}
+ /* #{$prefix}-border-corners-2
+   ----------------------------- */
+.#{$prefix}-border-corners-2 {
+	&:before,
+	figcaption:before {	
+		transform-origin: 100% 100%;
+	}
+	&:after,
+	figcaption:after{
+		transform-origin: 0 0;
+	}
+}
+ /* #{$prefix}-border-top-left
+   ----------------------------- */
+.#{$prefix}-border-top-left {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {	
+		transform-origin: 0 0;
+	}
+	&:before {
+		transition-delay: ($transition-duration / 1.25);
+		transition-delay: calc(var(--transition-duration) / 1.25);
+	}
+	&:after {
+		transition-delay: 0s;
+	}
+	figcaption {
+		&:before {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+		&:after {
+			transition-delay: 0s;
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: 0s;
+		}
+		&:after {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+		figcaption {
+			&:before {
+				transition-delay: 0s;
+			}
+			&:after {
+				transition-delay: ($transition-duration / 1.25);
+				transition-delay: calc(var(--transition-duration) / 1.25);
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-top-right
+   ----------------------------- */
+.#{$prefix}-border-top-right {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {	
+		transform-origin: 100% 0%;
+	}
+	&:before {
+		transition-delay: ($transition-duration / 1.25);
+		transition-delay: calc(var(--transition-duration) / 1.25);
+	}
+	&:after {
+		transition-delay: 0s;
+	}
+	figcaption {
+		&:before {
+			transition-delay: 0s;
+		}
+		&:after {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: 0s;
+		}
+		&:after {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+		figcaption {
+			&:before {
+				transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+			}
+			&:after {
+				transition-delay: 0s;
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-bottom-left
+   ----------------------------- */
+.#{$prefix}-border-bottom-left {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {	
+		transform-origin: 0 100%;
+	}
+	&:before {
+		transition-delay: 0s;
+	}
+	&:after {
+		transition-delay: ($transition-duration / 1.25);
+		transition-delay: calc(var(--transition-duration) / 1.25);
+	}
+	figcaption {
+		&:before {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+		&:after {
+			transition-delay: 0s;
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+		&:after {
+			transition-delay: 0s;
+		}
+		figcaption {
+			&:before {
+				transition-delay: 0s;
+			}
+			&:after {
+				transition-delay: ($transition-duration / 1.25);
+				transition-delay: calc(var(--transition-duration) / 1.25);
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-bottom-right
+   ----------------------------- */
+.#{$prefix}-border-bottom-right {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {	
+		transform-origin: 100% 100%;
+	}
+	&:before {
+		transition-delay: 0s;
+	}
+	&:after {
+		transition-delay: ($transition-duration / 1.25);
+		transition-delay: calc(var(--transition-duration) / 1.25);
+	}
+	figcaption {
+		&:before {
+			transition-delay: 0s;
+		}
+		&:after {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: ($transition-duration / 1.25);
+			transition-delay: calc(var(--transition-duration) / 1.25);
+		}
+		&:after {
+			transition-delay: 0s;
+		}
+		figcaption {
+			&:before {
+				transition-delay: ($transition-duration / 1.25);
+				transition-delay: calc(var(--transition-duration) / 1.25);
+			}
+			&:after {
+				transition-delay: 0s;
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-cc-1
+   ----------------------------- */
+.#{$prefix}-border-cc-1 {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {	
+		transition-duration: ($transition-duration * 0.5);
+	}
+	&:before,
+	figcaption:after {	
+		transform-origin: 0 0;
+	}
+	&:after,
+	figcaption:before {	
+		transform-origin: 100% 100%;
+	}
+	&:before {
+		transition-delay: ($transition-duration * 1);
+	}
+	&:after {
+		transition-delay: 0s;
+	}
+	figcaption {
+		&:before {
+			transition-delay: ($transition-duration * 1.5);
+		}
+		&:after {
+			transition-delay: ($transition-duration * 0.5);
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: ($transition-duration * 0.5);
+		}
+		&:after {
+			transition-delay: ($transition-duration * 1.5);
+		}
+		figcaption {
+			&:before {
+				transition-delay: 0s;
+			}
+			&:after {
+				transition-delay: ($transition-duration * 1);
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-ccc-1
+   ----------------------------- */
+.#{$prefix}-border-ccc-1 {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {	
+		transition-duration: ($transition-duration / 1.5);
+	}
+	&:before, 
+	figcaption:after {	
+		transform-origin: 100% 100%;
+	}
+	&:after, 
+	figcaption:before {	
+		transform-origin: 0 0;
+	}
+	&:before {
+		transition-delay: 0s;
+	}
+	&:after {
+		transition-delay: $transition-duration;
+	}
+	figcaption {
+		&:before {
+			transition-delay: ($transition-duration * 1.5);
+		}
+		&:after {
+			transition-delay: ($transition-duration * 0.5);
+		}
+	}
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before {
+			transition-delay: ($transition-duration * 1.5);
+		}
+		&:after {
+			transition-delay: ($transition-duration * 0.5);
+		}
+		figcaption {
+			&:before {
+				transition-delay: 0s;
+			}
+			&:after {
+				transition-delay: $transition-duration;
+			}
+		}
+	}
+}
+ /* #{$prefix}-border-cc-2
+   ----------------------------- */
+.#{$prefix}-border-cc-2 {
+	&:before,
+	figcaption:after {	
+		transform-origin: 0 0;
+	}
+	&:after,
+	figcaption:before {
+		transform-origin: 100% 100%;
+	}
+}
+ /* #{$prefix}-border-ccc-2
+   ----------------------------- */
+.#{$prefix}-border-ccc-2 {
+	&:before,
+	figcaption:after {	
+		transform-origin: 100% 100%;
+	}
+	&:after, figcaption:before {
+		transform-origin: 0 0;
+	}
+}
+ /* #{$prefix}-border-cc-3
+   ----------------------------- */
+.#{$prefix}-border-cc-3 {
+	&:before, figcaption:after {	
+		transform-origin: 0 0;
+	}
+	&:after, figcaption:before {
+		transform-origin: 100% 100%;
+	}
+	&:before {
+		right: ($border-margin + $border-margin + $border-width);
+		right: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+		left: 0;
+	}
+	&:after {
+		left: ($border-margin + $border-margin + $border-width);
+		left: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+		right: 0;
+	}
+	figcaption {
+		&:before {
+			top: ($border-margin + $border-margin + $border-width);
+			top: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+			bottom: 0;
+		}
+		&:after {
+			bottom: ($border-margin + $border-margin + $border-width);
+			bottom: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+			top: 0;
+		}
+	}
+}
+ /* #{$prefix}-border-ccc-3
+   ----------------------------- */
+.#{$prefix}-border-ccc-3 {
+	&:before,
+	figcaption:after {	
+		transform-origin: 100% 100%;
+	}
+	&:after,
+	figcaption:before {
+		transform-origin: 0 0;
+	}
+	&:before {
+		left: ($border-margin + $border-margin + $border-width);
+		left: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+		right: 0;
+	}
+	&:after {
+		right: ($border-margin + $border-margin + $border-width);
+		right: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+		left: 0;
+	}
+	figcaption {
+		&:before {
+			bottom: ($border-margin + $border-margin + $border-width);
+			bottom: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+			top: 0;
+		}
+		&:after {
+			top: ($border-margin + $border-margin + $border-width);
+			top: calc(var(--border-margin) + var(--border-margin) + var(--border-width));
+			bottom: 0;
+		}
+	}
+}
+
+ /* #{$prefix}-border-fade
+   ----------------------------- */
+.#{$prefix}-border-fade {
+	&:before,
+	&:after,
+	figcaption:before,
+	figcaption:after {
+		transform: scale(1);
+		opacity: 0;	
+	}
+
+	&.hover,
+	&:hover,
+	&:focus,
+	:focus > & {
+		&:before,
+		&:after,
+		figcaption:before,
+		figcaption:after {
+			opacity: 1;
+		}
+	}
+ }
+
+ // IE11
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+	[class^='#{$prefix}-border'],
+	[class*=' #{$prefix}-border'] {
+		&:before, 
+		&:after {
+			height: $border-width;
+			left: $border-margin;
+			right: $border-margin;
+		}
+		&:before {
+			top: $border-margin;
+		}
+		&:after {
+			bottom: $border-margin;
+		}
+		figcaption {
+			&:before, &:after {
+				width: $border-width;
+				top: $border-margin;
+				bottom: $border-margin;
+			}
+			&:before {
+				left: $border-margin;
+			}
+			&:after {
+				right: $border-margin;
+			}
+		}
+	}
+}

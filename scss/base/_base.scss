@@ -1,0 +1,74 @@
+.#{$prefix}-#{$name} {
+    --text-color: #{$text-color};
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+    --padding: #{$padding};
+    --transition-duration: #{$transition-duration};
+    --border-margin: #{$border-margin};
+    --border-width: #{$border-width};
+    --border-color: #{$border-color};
+    --border-radius: #{$border-radius};
+    --image-opacity: #{$image-opacity};
+
+    display: inline-flex;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+    color: var(--text-color);
+    border-radius: $border-radius;
+    border-radius: var(--border-radius);
+
+    &:before,
+    &:after,
+    & *,
+    & *:before,
+    & *:after {
+        box-sizing: border-box;
+        transition: all $transition-duration ease;
+        transition: all var(--transition-duration) ease;
+    }
+
+    figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: $padding;
+        padding: var(--padding);
+        width: 100%;
+        z-index: 1;
+    }
+
+    img {
+        object-fit: cover;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin-top: 0;
+        color: $text-color;
+        color: var(--text-color);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

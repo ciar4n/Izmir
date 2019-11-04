@@ -1,0 +1,29 @@
+.#{$prefix}-#{$name} {
+    background-color: $primary-color;
+    background-color: var(--primary-color);
+
+    figcaption {
+        padding: ($padding * 2);
+        padding: calc(var(--padding) * 2);
+
+        > * {
+            opacity: 0;
+        }
+    }
+
+    &.hover,
+    &:hover,
+    &:focus,
+    :focus > & {
+        > img {
+            opacity: $image-opacity;
+            opacity: var(--image-opacity);
+        }
+
+        figcaption {
+            > * {
+                opacity: 1;
+            }
+        }
+    }
+}

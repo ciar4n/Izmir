@@ -1,0 +1,45 @@
+/* #{$prefix}-gradient-*
+   ----------------------------- */
+.#{$prefix}-gradient {
+
+    &-top {
+        background-image: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-left {
+        background-image: linear-gradient(90deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-right {
+        background-image: linear-gradient(270deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(270deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-bottom {
+        background-image: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(0deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-top-left {
+        background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-top-right {
+        background-image: linear-gradient(225deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(225deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-bottom-left {
+        background-image: linear-gradient(45deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(45deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+    &-bottom-right {
+        background-image: linear-gradient(315deg, $primary-color 0%, $secondary-color 100%);
+        background-image: linear-gradient(315deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    }
+
+}

@@ -1,0 +1,45 @@
+/* #{$prefix}-layout-*
+   ----------------------------- */
+.#{$prefix}-#{$name} .#{$prefix}-layout {
+    &-top-left {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    &-top-center {
+        justify-content: flex-start;
+    }
+
+    &-top-right {
+        justify-content: flex-start;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    &-center-left {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    &-center-right {
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    &-bottom-left {
+        justify-content: flex-end;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    &-bottom-center {
+        justify-content: flex-end;
+    }
+
+    &-bottom-right {
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
