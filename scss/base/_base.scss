@@ -21,11 +21,11 @@
     border-radius: $border-radius;
     border-radius: var(--border-radius);
 
-    &:before,
-    &:after,
+    &::before,
+    &::after,
     & *,
-    & *:before,
-    & *:after {
+    & *::before,
+    & *::after {
         box-sizing: border-box;
         transition: all $transition-duration ease;
         transition: all var(--transition-duration) ease;

@@ -2,7 +2,6 @@
   "name": "@ciar4n/izmir",
   "version": "1.0.0",
   "description": "An image hover mini CSS library",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
