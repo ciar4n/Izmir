@@ -1,0 +1,25 @@
+{
+  "name": "ciar4n/izmir",
+  "version": "1.0.0",
+  "description": "An image hover mini CSS library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciar4n/Izmir.git"
+  },
+  "keywords": [
+    "css",
+    "image",
+    "animation",
+    "hover"
+  ],
+  "author": "ciar4n",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ciar4n/Izmir/issues"
+  },
+  "homepage": "https://github.com/ciar4n/Izmir#readme"
+}
