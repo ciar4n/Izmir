@@ -25,8 +25,13 @@ Izmir is a mini CSS library allowing you to quickly create beautiful image hover
 * Ultra small file size (2KB GZipped)
 * Complete documentation
 
+## NPM
 
-## Installation
+  ```
+  npm install @ciar4n/izmir
+  ```
+
+## Setup
 
 1. Extract and copy the CSS files in the root of your download folder to your projects CSS folder.
 2. Include a link to the CSS your document's `<head>` tags
